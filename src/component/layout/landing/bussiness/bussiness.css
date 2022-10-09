@@ -1,0 +1,32 @@
+.brd-bottom{
+    width: 90px;
+    border: 0;
+    border-bottom: 4px solid #17b677;
+}
+
+
+.img-height{
+    height: 11vh;
+}
+
+.img-height:hover{
+    color: blue;
+    height: 12vh;
+}
+
+.text-font{
+    font-size: medium;
+}
+
+
+
+/* [data-hover = "hover"]:hover{
+
+    .text-font{
+        color: blue;
+    }
+} */
+
+.bussiness-text-font{
+    font-size: 15px;
+}

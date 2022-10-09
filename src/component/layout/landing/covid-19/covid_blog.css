@@ -1,0 +1,26 @@
+
+
+.brd-bottom{
+    border: 0;
+    width: 120px;
+    border-bottom: 4px solid #17b677;
+}
+.h-bold{
+    font-weight:600;
+    font-size: medium;
+}
+
+.t-bold{
+    font-weight: 200;
+    font-size: small;
+    text-align: left;
+}
+
+.img-fluid1{
+    height: 45vh;
+    width: 90%;
+}
+
+.dotSize{
+    font-size: 4rem;
+}

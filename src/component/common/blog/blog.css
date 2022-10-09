@@ -1,0 +1,22 @@
+
+
+.blog-bg-img{
+    background-image: url('./../../../assests//img/bg-business.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 70vh; */
+}
+
+.w-33{
+    width : 32.9vw;
+    height: 50vh;
+}
+
+@media (max-width : 991px) {
+
+    .w-33{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}

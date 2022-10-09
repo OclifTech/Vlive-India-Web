@@ -1,0 +1,15 @@
+
+
+.feature-bg-img{
+    background-image: url('./../../../../assests/img/bg-impact-stories.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brd-bottom{
+    width: 180px;
+    border: 0;
+    /* width: 10px; */
+    border-bottom: 4px solid #17b677;
+}

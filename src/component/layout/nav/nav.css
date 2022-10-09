@@ -1,0 +1,77 @@
+.link-color {
+  color: black;
+  font-size: small;
+}
+
+.bg-color {
+  background-color: #fdfafa;
+  gap: 0.5rem;
+}
+.app {
+  font-size: 15px !important;
+}
+
+.logo {
+  width: 55%;
+}
+
+.link-color-1 {
+  color: black;
+  font-size: large;
+  font-weight: 400;
+}
+
+.overlay {
+  height: 12vh;
+  visibility: hidden;
+  /* background-color: white; */
+}
+
+/* .scroll{
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+} */
+
+.container-fluid {
+  height: 12vh;
+  background-color: white;
+}
+
+.color li a {
+  color: #817e7e !important;
+}
+
+#bars {
+  display: none;
+}
+
+.brd-right {
+  border: 0;
+  height: 12vh;
+  border-right: 1px solid rgb(155, 153, 153);
+}
+
+@media (min-width: 250px) and (max-width: 991px) {
+  #nav-item {
+    display: none;
+  }
+
+  #bars {
+    display: block;
+    display: flex;
+    justify-content: right;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 100%;
+  }
+}
