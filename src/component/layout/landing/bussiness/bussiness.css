@@ -9,10 +9,10 @@
     height: 11vh;
 }
 
-.img-height:hover{
+/* .img-height:hover{
     color: blue;
     height: 12vh;
-}
+} */
 
 .text-font{
     font-size: medium;
@@ -20,13 +20,17 @@
 
 
 
-/* [data-hover = "hover"]:hover{
-
-    .text-font{
-        color: blue;
-    }
-} */
+.hover-shadow:hover{
+    /* box-shadow: white; */
+    background-color: white;
+}
 
 .bussiness-text-font{
     font-size: 15px;
+}
+
+@media (max-width : 991px) {
+    .img-height{
+        height: 15vh;
+    }
 }

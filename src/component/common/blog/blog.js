@@ -13,7 +13,7 @@ export default function Blog() {
     >
       <div className="d-flex flex-lg-row flex-column">
         <div className="">
-          <div className="card border-0 text-left">
+          <div className="card border-0 text-left bg-image  hover-zoom hover-shadow ripple">
             <img src={img1} className="card-img-top w-33" alt="..." />
             <div className="card-body">
               <h5 className="card-title text-start h-bold text-success">
@@ -30,7 +30,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="">
-          <div className="card border-0">
+          <div className="card border-0 bg-image  hover-zoom hover-shadow ripple">
             <img src={img2} className="card-img-top w-33" alt="..." />
             <div className="card-body ">
               <h5 className="card-title text-start h-bold text-success">
@@ -49,7 +49,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="">
-          <div className="card border-0">
+          <div className="card border-0 bg-image  hover-zoom hover-shadow ripple">
             <img src={img3} className="card-img-top w-33" alt="..." />
             <div className="card-body">
               <h5 className="card-title text-start h-bold text-success">

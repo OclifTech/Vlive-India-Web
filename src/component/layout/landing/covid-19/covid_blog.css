@@ -24,3 +24,18 @@
 .dotSize{
     font-size: 4rem;
 }
+
+@media (max-width : 991px) {
+
+        .img-fluid1{
+            height: auto;
+            width: 100%;
+        }
+
+}
+
+@media (max-width : 576px) {
+    .font-size{
+        font-size: large;
+    }
+}
