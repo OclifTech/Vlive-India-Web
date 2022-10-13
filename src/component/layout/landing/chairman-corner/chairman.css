@@ -26,7 +26,23 @@
     padding-bottom: 2px;
 }
 
-.img-fluid{
+.chairman-img-fluid{
     height: 60vh;
     width: 85%;
+}
+
+@media (max-width : 991px) {
+
+    .chairman-img-fluid{
+        width: 100%;
+        height: auto;
+    }
+
+    .chairman-corner{
+        height: auto;
+    }
+
+    .news-update{
+        height: auto;
+    }
 }

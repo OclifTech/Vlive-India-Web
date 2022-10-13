@@ -31,9 +31,6 @@ export class Landing extends Component {
         <div className="chairman-bg-img">
           <ChairMan  />
         </div>
-        <div>
-          < Footer  />
-        </div>
       </div>
     );
   }

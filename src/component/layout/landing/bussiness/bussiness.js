@@ -25,27 +25,33 @@ const Bussiness = () => {
         </div>
         <div className="container mt-5">
           <div className="row mt-5 py-5">
-            <div className="col-md-4">
-              <div className="text-center" data-hover="hover">
+          <div className="col-md-4 bg-image hover-shadow  hover-zoom  ripple">
+              <div className="p-4">
+              <div className="text-center  ">
                 <img src={img1} alt="img" className="img-height" />
-                <h5 className="text-font pt-3">MEEE Electronics</h5>
+                <h5 className="text-font pt-3" >Vlive Plus</h5>
+              </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="text-center">
+            <div className="col-md-4 bg-image hover-shadow  hover-zoom  ripple">
+              <div className="p-4">
+              <div className="text-center  ">
                 <img src={img2} alt="img" className="img-height" />
-                <h5 className="text-font pt-3" >Yamasha Venture</h5>
+                <h5 className="text-font pt-3" >Vlive Plus</h5>
+              </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="text-center">
+            <div className="col-md-4 bg-image hover-shadow  hover-zoom  ripple">
+              <div className="p-4">
+              <div className="text-center  ">
                 <img src={img3} alt="img" className="img-height" />
                 <h5 className="text-font pt-3" >Vlive Plus</h5>
+              </div>
               </div>
             </div>
           </div>
           <div className="text-center my-5">
-            <a href="" className="btn btn-outline-primary">
+            <a href="#" className="btn btn-outline-primary">
               Explore More
             </a>
           </div>

@@ -68,23 +68,19 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-lg-1 p-5 m-4">
+        <div className="col-lg-1 p-lg-5 m-lg-4">
           <div
-            style={{
-              borderLeft: "3px solid rgb(183, 179, 179)",
-              height: "150px",
-            }}
+           className="footer-border-left"
           ></div>
         </div>
-        <div className="col-lg-3 p-3 mt-3">
+        <div className="col-lg-3 p-lg-3 mt-lg-3">
           <div className="d-flex flex-column mx-auto align-items-center pl-2">
             <img
               src={footeLogo}
               alt="#error"
-              style={{ height: "12vh", width: "80%" }}
-              className="mr-3 mt-5"
+              className="mr-3 mt-lg-5 footer-logo"
             />
-            <div className="d-flex justify-content-center align-items-center mt-5 mr-5" style={{gap : '1.5rem'}}>
+            <div className="d-flex justify-content-center align-items-center mt-5 mr-lg-5" style={{gap : '1.5rem'}}>
             <i class="fab fa-facebook-f text-primary icon-width"></i>
             <i class="fab fa-twitter text-primary icon-width"></i>
             <i class="fab fa-instagram text-primary icon-width"></i>
@@ -94,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-dark">
+      <div className="footer-bg-dark">
             <div className="text-center p-3">
               <h6 className="text-light">&copy; 2022 Vlive India Private Limited</h6>
             </div>

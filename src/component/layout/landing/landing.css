@@ -12,7 +12,7 @@
 
 .bussiness-bg-img{
   width: 100%;
-  height: 80vh;
+  height: 92vh;
   background-image: url('./img/bg-business.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,14 @@
 
 
 @media (max-width : 991px) {
+
+  .bg-img{
+    height: auto;
+  }
   .chairman-bg-img{
+    height: auto;
+  }
+  .bussiness-bg-img{
     height: auto;
   }
 }

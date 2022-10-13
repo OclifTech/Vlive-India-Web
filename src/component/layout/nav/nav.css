@@ -66,12 +66,12 @@ top: 0;
 
 @media (min-width: 577px) and (max-width: 991px) {
   .logo {
-    width: 100%;
+    width: 60%;
   }
 }
 
 @media (max-width: 576px) {
   .logo {
-    width: 100%;
+    width: 90%;
   }
 }
