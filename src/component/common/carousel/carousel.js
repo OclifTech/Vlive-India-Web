@@ -11,6 +11,9 @@ import "./carousel.css";
 // import required modules
 import { Pagination , Autoplay} from "swiper";
 
+// importing carousel img
+import carouselOne from '../../../assests/img/carouselOne.png';
+
 export class ImgCarousel extends Component{
 
     render(){
@@ -30,7 +33,7 @@ export class ImgCarousel extends Component{
         modules={[Autoplay ,Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide  className="swiper-slide"><img  src="https://cdn.pixabay.com/photo/2018/12/05/12/06/container-3857611_960_720.jpg" alt="demo"  /></SwiperSlide>
+        <SwiperSlide  className="swiper-slide"><img  src={carouselOne} alt="demo"  /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img  src="https://cdn.pixabay.com/photo/2020/10/01/17/11/store-5619201_960_720.jpg" alt="demo"  /></SwiperSlide>
       </Swiper>
             </>
