@@ -9,6 +9,7 @@ import Bussiness from "./bussiness/bussiness";
 import Blog from "../../common/blog/blog";
 import ChairMan from "./chairman-corner/chairman";
 import Footer from "../footer/footer";
+import Distribute from "./distribute/distribute";
 
 export class Landing extends Component {
   render() {
@@ -28,8 +29,11 @@ export class Landing extends Component {
         {/* <div data-aos="fade-up" data-aos-anchor-placement="center-center">
           <Bussiness />
         </div> */}
+        <div className="bg-gray">
+          <Distribute />
+        </div>
         <div className="chairman-bg-img">
-          <ChairMan  />
+          <ChairMan />
         </div>
       </div>
     );
