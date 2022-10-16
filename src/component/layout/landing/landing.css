@@ -18,6 +18,11 @@
   background-size: cover;
 }
 
+.bg-gray{
+  background-color: rgba(190, 184, 184, 0.096);
+  padding: 45px 0px;
+}
+
 .chairman-bg-img{
 
   width: 100%;

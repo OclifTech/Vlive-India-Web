@@ -49,7 +49,7 @@ const ChairMan = () => {
           </div>
           <div className="col-lg-8 mt-5 mt-lg-0">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="chairman-corner bg-primary">
                   <div className="p-3">
                     <h4>Chairman's Corner</h4>
@@ -68,7 +68,7 @@ const ChairMan = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 bg-image hover-zoom mt-5 mt-lg-0">
+              <div className="col-lg-6 bg-image hover-zoom mt-5 mt-lg-0">
                   <img src={chairman} alt="chairman" className="chairman-img-fluid" />
               </div>
             </div>

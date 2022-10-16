@@ -18,7 +18,7 @@ export class Navbar extends Component {
               </div>
             </div>
             <div className="col-lg-9 col-sm-8 col-7" id="nav-item">
-              <ul className="nav  me-auto app color">
+              <ul className="nav  mx-auto app color">
                 <li className="nav-item">
                   <Link
                     className="nav-link link-color"
@@ -49,7 +49,7 @@ export class Navbar extends Component {
                   </Link>
                 </li>
               </ul>
-              <ul className="nav  me-auto bg-color ">
+              <ul className="nav  my-auto bg-color ">
                 <li className="nav-item">
                   <Link
                     className="nav-link link-color-1 app"
