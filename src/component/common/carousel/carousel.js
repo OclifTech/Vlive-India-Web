@@ -21,6 +21,7 @@ export class ImgCarousel extends Component {
     return (
       <>
         <Swiper
+        
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -33,7 +34,7 @@ export class ImgCarousel extends Component {
           className="mySwiper"
         >
           <SwiperSlide className="swiper-slide">
-            <img src={carouselOne} alt="demo" />
+            <img src={carouselOne} alt="demo" className="img-fluid" />
           </SwiperSlide>
           <SwiperSlide className="swiper-slide">
             <img src={carouselTwo} alt="demo" />
