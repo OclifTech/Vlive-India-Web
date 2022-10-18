@@ -29,7 +29,7 @@ const Bussiness = () => {
               <div className="p-4">
               <div className="text-center  ">
                 <img src={img1} alt="img" className="img-height" />
-                <h5 className="text-font pt-3" >Vlive Plus</h5>
+                <h5 className="text-font pt-3" > Yamasha Venture Limited</h5>
               </div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const Bussiness = () => {
               <div className="p-4">
               <div className="text-center  ">
                 <img src={img2} alt="img" className="img-height" />
-                <h5 className="text-font pt-3" >Vlive Plus</h5>
+                <h5 className="text-font pt-3" >Vlive Foundation </h5>
               </div>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Bussiness = () => {
               <div className="p-4">
               <div className="text-center  ">
                 <img src={img3} alt="img" className="img-height" />
-                <h5 className="text-font pt-3" >Vlive Plus</h5>
+                <h5 className="text-font pt-3" >INNOKAT SERVICES</h5>
               </div>
               </div>
             </div>

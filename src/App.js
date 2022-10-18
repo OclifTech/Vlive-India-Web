@@ -15,8 +15,8 @@ import Career from "./component/layout/nav/nav-item/career";
 import Media from "./component/layout/nav/nav-item/media";
 import Association from "./component/layout/nav/nav-item/2-item/association";
 import Team from "./component/layout/nav/nav-item/2-item/team";
-import Venture from "./component/layout/nav/nav-item/2-item/venture";
 import Businesses from "./component/layout/nav/nav-item/2-item/business";
+import Gallery from "./component/layout/nav/nav-item/2-item/gallery";
 
 function App() {
   React.useEffect(() => {
@@ -41,31 +41,21 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
         <Routes>
-          <Route path="/invester" element={< Invester />} />
-        </Routes>
-        <Routes>
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Routes>
           <Route path="/career" element={<Career />} />
         </Routes>
         <Routes>
-          <Route path="/media" element={<Media />} />
-        </Routes>
-        <Routes>
           <Route path="/association" element={<Association />} />
-        </Routes>
-        <Routes>
-          <Route path="/team" element={<Team />} />
         </Routes>
         <Routes>
           <Route path="/businesses" element={<Businesses />} />
         </Routes>
-        
         <Routes>
-          <Route path="/venture" element={<Venture />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
-        <Footer  />
+        <Footer />
       </Router>
     </div>
   );

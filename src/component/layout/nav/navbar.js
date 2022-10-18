@@ -28,16 +28,7 @@ export class Navbar extends Component {
                     About Us
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link link-color" to="/invester">
-                    Investors
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link link-color" to="/media">
-                    Media
-                  </Link>
-                </li>
+
                 <li className="nav-item">
                   <Link className="nav-link link-color" to="/career">
                     Career
@@ -64,19 +55,15 @@ export class Navbar extends Component {
                     Association
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link link-color-1 app" to="/team">
-                    Team
-                  </Link>
-                </li>
+
                 <li className="nav-item">
                   <Link className="nav-link link-color-1 app" to="/blogs">
                     Blogs
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link link-color-1 app" to="/venture">
-                    Venture Capital
+                  <Link className="nav-link link-color-1 app" to="/gallery">
+                    Gallery
                   </Link>
                 </li>
               </ul>
