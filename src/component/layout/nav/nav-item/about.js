@@ -1,17 +1,18 @@
 import React from "react";
+import aboutImg from './../../../../assests/img/New folder/about-img.png';
 
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div >
         <div className="pb-5 text-center">
           <img
-            src="https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=740&t=st=1665579788~exp=1665580388~hmac=a3eaf35e0f229edefd400462a977d821d3a5eb4486e7125d93d3d2a92232e48c"
+            src={aboutImg}
             alt=""
-            className="img-fluid"
+            className="about-img"
           />
         </div>
-        <div>
+        <div className="container">
           <h4 className="text-dark font-weight-bold border-bottom-success">About us </h4>
           <p className="mt-4 ">
             Vlive India is one of India’s largest companies that
@@ -27,12 +28,16 @@ const About = () => {
             performance and services. Vlive India is one of those companies that
             believes in working and growing with ethics and that's the reason
             that the company has won not only success but also the trust of its
-            clients and the entire nation. Vision The long term and ultimate
+            clients and the entire nation
+          </p>
+          <div className="mt-5">
+          <h4 className="text-dark font-weight-bold border-bottom-success">Vision</h4>
+          <p className="mt-4"> The long term and ultimate
             vision of the company is to establish a powerful network not only in
             India but also around the globe. The company also believes that it
             can grow only when others will be growing by the help of the
-            company.
-          </p>
+            company.</p>
+            </div>
         </div>
       </div>
     </>
