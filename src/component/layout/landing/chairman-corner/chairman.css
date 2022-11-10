@@ -31,6 +31,10 @@
     width: 85%;
 }
 
+.font-size{
+    font-size: medium;
+}
+
 @media (max-width : 991px) {
 
     .chairman-img-fluid{

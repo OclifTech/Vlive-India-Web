@@ -17,7 +17,10 @@ export class Covid_blog extends Component{
                                 <h4 className=" pl-3 h-bold">The Vlive Group</h4>
                             </div>
                             <div className="text-center  mx-auto px-5">
-                            <p className=" px-lg-3 t-bold">The Vlive Group, which stood united with the government in India’s fightback ever since the pandemic broke, ramped up its efforts to an unprecedented scale in wake of the 2nd wave hitting India. The diversified infrastructure giant deployed all resources at its command – from staff and logistics to ports and airports – to aid this nationwide fightback.</p>
+                            <p className=" px-lg-3 t-bold">Vlive India is one of those companies that believes in ethics and helping others. At the time of pandemic, it helped people in need. Though Vlive foundation, it served more than 1,00,000 people at that time. Food, water, educational services and health services as well were served to the poor people at the time of epidemic. 
+Chairman and the entire team of Vlive India strongly believes in business and humanity ethics as well.
+
+</p>
                             </div>
                         </div>
                         <div className="col-lg-5">

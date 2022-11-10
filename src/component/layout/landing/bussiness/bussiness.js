@@ -45,7 +45,7 @@ const Bussiness = () => {
               <div className="p-4">
               <div className="text-center  ">
                 <img src={img3} alt="img" className="img-height" />
-                <h5 className="text-font pt-3" >INNOKAT SERVICES</h5>
+                <h5 className="text-font pt-3" >Innokat Services</h5>
               </div>
               </div>
             </div>

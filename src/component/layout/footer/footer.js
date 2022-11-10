@@ -3,7 +3,7 @@ import "./footer.css";
 import footeLogo from "./../.././../assests/logo/logo.png";
 const Footer = () => {
   return (
-    <>
+    <div className="mt-5 pt-5">
       <hr />
       <div className="row mr-0">
         <div className="col-lg-3">
@@ -88,7 +88,7 @@ const Footer = () => {
           </h6>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

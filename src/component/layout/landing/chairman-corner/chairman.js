@@ -54,9 +54,11 @@ const ChairMan = () => {
                   <div className="p-3">
                     <h4>Chairman's Corner</h4>
                     <div className="py-2">
-                      <h4 className="pt-3">
-                        " It is my Promise that we will continue to invest and
-                        do our part to help the people wherever we operate."
+                      <h4 className="pt-3 font-size">
+                      “Everyone starts business to gain but we started our Vlive India to give and gain both. 
+Because if you are doing a business for only yourself, you are a good businessman but if you are doing it for the entire nation… then that makes you a good human being and a good businessman as well.”
+ 
+
                       </h4>
                     </div>
                     <h6 className="pt-5 padding-bottom">Manish Sharma</h6>
