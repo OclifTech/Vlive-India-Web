@@ -1,22 +1,20 @@
 import "./App.css";
-import React from "react";
-import Landing from "./component/layout/landing/landing";
+import React , {lazy, Suspense}from "react";
+ const Landing =lazy(()=> import ( "./component/layout/landing/landing"));
 import Navbar from "./component/layout/nav/navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Blogs from "./component/common/blog/blogs/Blogs";
-import BlogById from "./component/common/blog/blogById/BlogById";
+const Blogs = lazy(()=> import ("./component/common/blog/blogs/Blogs"));
+ const BlogById = lazy(()=> import("./component/common/blog/blogById/BlogById"));
 import Footer from "./component/layout/footer/footer";
-import About from "./component/layout/nav/nav-item/about";
-import Invester from "./component/layout/nav/nav-item/invester";
-import Contact from "./component/layout/nav/nav-item/contact";
-import Career from "./component/layout/nav/nav-item/career";
-import Media from "./component/layout/nav/nav-item/media";
-import Association from "./component/layout/nav/nav-item/2-item/association";
-import Team from "./component/layout/nav/nav-item/2-item/team";
-import Businesses from "./component/layout/nav/nav-item/2-item/business";
-import Gallery from "./component/layout/nav/nav-item/2-item/gallery";
+const About = lazy(() => import ( "./component/layout/nav/nav-item/about"));
+const Contact = lazy(()=> import( "./component/layout/nav/nav-item/contact"));
+const Career = lazy(()=> import( "./component/layout/nav/nav-item/career"));
+const Association = lazy(()=> import("./component/layout/nav/nav-item/2-item/association"));
+ const Businesses = lazy(()=> import( "./component/layout/nav/nav-item/2-item/business"));
+import { PopUpImg } from "./component/layout/nav/nav-item/2-item/gallery";
+const Gallery = lazy(()=> import ("./component/layout/nav/nav-item/2-item/gallery") )
 
 function App() {
   React.useEffect(() => {
@@ -26,13 +24,11 @@ function App() {
 
   return (
     <div className="app">
+      <Suspense >
       <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-        </Routes>
-        <Routes>
-          <Route path="blogs/blog/id" element={<BlogById />} />
         </Routes>
         <Routes>
           <Route path="/blogs" element={<Blogs />} />
@@ -55,8 +51,15 @@ function App() {
         <Routes>
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
+        <Routes>
+          <Route path="/gallery/:id" element={<PopUpImg />} />
+        </Routes>
+        <Routes>
+          <Route path="/blog/:id" element={<BlogById />} />
+        </Routes>
         <Footer />
       </Router>
+      </Suspense>
     </div>
   );
 }

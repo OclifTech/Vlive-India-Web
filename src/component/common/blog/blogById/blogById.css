@@ -9,9 +9,10 @@
 
 .b-title{
     position: absolute;
-    padding: 0 15px;
-    top: 57vh;
-    left: 08%;
+    padding: 0 25px;
+    transform: translate(0px , -171px);
+    /* top: 57vh;
+    left: 08%; */
 }
 
 .b-text-font{

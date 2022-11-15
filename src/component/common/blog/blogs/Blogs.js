@@ -1,10 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Blog from '../blog';
+import axios from "axios";
+import { masterPanelConfig } from "../../../../config";
 import blogImg from "./../../../../assests/img/img3.jpg";
+import './../blogById/blogById.css'
 import "./blogs.css";
 
 export default function Blogs() {
+  const [blogs, setBlogs] = React.useState([]);
+
+  React.useEffect(() => {
+    axios
+      .get(`${masterPanelConfig.apiBaseUrl}/api/blog`)
+      .then((res) => {
+        if (res.data) {
+          console.log(res.data);
+          setBlogs(res.data);
+        }
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+  }, []);
   return (
     <div className="Blogs">
       <div className="img-section ">
@@ -23,114 +40,26 @@ export default function Blogs() {
         </div>
         <div className="mt-5">
           <div className="row">
-            <div className="col-lg-4 ">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
+            {blogs.map((blog, index) => {
+              return (
+                <div className="col-lg-4 mt-4 " key={index}>
+                  <Link to={`/blog/${blog._id}`}>
+                    <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple">
+                      <img src={blog.img} class="card-img" alt="..." />
+                      <div
+                        class="card-img-overlay "
+                        style={{ backgroundColor: "rgba(0, 0, 0, 0.35)" }}
+                      >
+                        <h5 class="card-title text-light font-weight-bold">
+                          {blog.title}
+                        </h5>
+                        <p class="card-text mt-5 pt-5" style={{overflow : "hidden"}}>{blog.subtitle}</p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </div>
-              </Link>
-            </div>
-            <div className="col-lg-4 ">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
-                </div>
-              </div>
-              </Link>
-            </div>
-            <div className="col-lg-4 ">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
-                </div>
-              </div>
-              </Link>
-            </div>
-            <div className="col-lg-4 mt-5">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
-                </div>
-              </div>
-              </Link>
-            </div>
-            <div className="col-lg-4 mt-5 ">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
-                </div>
-              </div>
-              </Link>
-            </div>
-            <div className="col-lg-4 mt-5 ">
-              <Link to='#'>
-              <div class="card  text-white border-0 rounded-0 bg-image  hover-zoom hover-shadow ripple" >
-                <img src={blogImg} class="card-img" alt="..." />
-                <div class="card-img-overlay " style={{backgroundColor : 'rgba(0, 0, 0, 0.3)'}}>
-                  <h5 class="card-title text-light font-weight-bold">In this section, we handpick untold stories and experiences that make</h5>
-                  <p class="card-text mt-5 pt-5">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  {/* <div className="hover-overlay">
-                    <div className="mask" style={{backgroundColor : 'rgba(16, 100, 235, 0.2)'}}></div>
-                  </div> */}
-                </div>
-              </div>
-              </Link>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
