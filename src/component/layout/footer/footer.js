@@ -1,4 +1,5 @@
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 import footeLogo from "./../.././../assests/logo/logo.png";
 const Footer = () => {
@@ -35,25 +36,22 @@ const Footer = () => {
         <div className="col-lg-2">
           <div className="footer-item-lineHeight">
             <ul className="d-flex justify-content-center align-items-center flex-column pt-5">
-              {/* <a href="" className="nav-link ">
-                <h5 className="nav-link "></h5>
-              </a> */}
-              <li href="" className="nav-link ">
-                <a className="nav-item  color">About us</a>
+              <li  className="nav-link ">
+                <Link  to="/about" className="nav-item  color">About us</Link>
               </li>
 
-              <li href="" className="nav-link ">
-                <a className="nav-item  color">Careers</a>
+              <li  className="nav-link ">
+                <Link to="/career" className="nav-item  color">Careers</Link>
               </li>
-              <li href="" className="nav-link ">
-                <a className="nav-item  color">Contact us</a>
+              <li  className="nav-link ">
+                <Link to="/contactus" className="nav-item  color">Contact us</Link>
               </li>
 
-              <li href="" className="nav-link ">
-                <a className="nav-item  color">Blogs</a>
+              <li  className="nav-link ">
+                <Link to="/blogs" className="nav-item  color">Blogs</Link>
               </li>
-              <li href="" className="nav-link ">
-                <a className="nav-item  color">Association</a>
+              <li  className="nav-link ">
+                <Link to="/association" className="nav-item  color">Association</Link>
               </li>
             </ul>
           </div>
@@ -65,7 +63,7 @@ const Footer = () => {
           <div className="d-flex flex-column mx-auto align-items-center pl-2">
             <img
               src={footeLogo}
-              alt="#error"
+              alt="Loading..."
               className="mr-3 mt-lg-5 footer-logo"
             />
             <div
