@@ -2,6 +2,7 @@ import React from "react";
 import "./chairman.css";
 import newsLogo from "./../../../../assests/logo/news-icon.png";
 import chairman from "./../../../../assests/img/chairman-img.png";
+import { Link } from "react-router-dom";
 
 const ChairMan = () => {
   return (
@@ -18,10 +19,9 @@ const ChairMan = () => {
                     style={{ gap: ".6rem" }}
                   >
                     <img src={newsLogo} alt="logo" />
-                    <h6 className="news-font pt-4">
-                      Adani Charts plan to invest $100 bn <br /> in coming
-                      decade <br /> Sep 28, 2022 | Mint
-                    </h6>
+                    <a href={"https://5feb.xyz/blog/637d00aa63efe5df8f6fc963"} className="news-font pt-4">
+                     Smart TV & DTH Manufecturer Vlive is one of the largest and trustworthy manufacturers of home appliances.
+                    </a>
                   </div>
                   <div
                     className="d-flex align-items-center"

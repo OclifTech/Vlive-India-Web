@@ -13,7 +13,7 @@ const Distribute = () => {
       <div className=" container ">
         <div className="row">
           <div className="col-lg-6 bg-image hover-zoom">
-            <img src={banner} alt="img" className="img-fluid w-100" />
+            <iframe className="img-fluid w-100" src="https://www.youtube.com/embed/mCX6L2wolAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{height : "52vh"}}></iframe>
           </div>
           <div className="col-lg-6 mt-4 mt-lg-0">
             <div className="d-flex flex-column justify-content-center align-items-center ">
@@ -28,7 +28,7 @@ const Distribute = () => {
               </div>
               <div className="row mt-3 d-hide">
                 <div className="col-lg-6  bg-image hover-zoom ">
-                  <img src={banner1} alt="" className="img-fluid" />
+                  <iframe className="img-fluid" src="https://www.youtube.com/embed/244xBRCMjw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{height : "23vh"}} ></iframe>
                 </div>
                 <div className="col-lg-6 bg-image hover-zoom">
                   <img src={banner2} alt="" className="img-fluid" />
