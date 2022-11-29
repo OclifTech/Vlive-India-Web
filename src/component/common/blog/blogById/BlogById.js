@@ -33,7 +33,7 @@ export default function BlogById() {
       <div className="title-section container mt-5 pt-4">
         <h4 className="text-center font-weight-bold">{blog.subtitle} </h4>
       </div>
-      <div className="blog-text-section container mt-5 pt-5">
+      <div className="blog-text-section container mt-5">
         <div dangerouslySetInnerHTML={{__html : `${blog.desc}` }} />
       </div>
     </div>
