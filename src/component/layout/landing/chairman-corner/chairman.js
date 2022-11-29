@@ -2,12 +2,11 @@ import React from "react";
 import "./chairman.css";
 import newsLogo from "./../../../../assests/logo/news-icon.png";
 import chairman from "./../../../../assests/img/chairman-img.png";
-import { Link } from "react-router-dom";
 
 const ChairMan = () => {
   return (
     <>
-      <div className="container p-5">
+      <div className="container p-2">
         <div className="row mt-5">
           <div className="col-lg-4">
             <div className="news-update">

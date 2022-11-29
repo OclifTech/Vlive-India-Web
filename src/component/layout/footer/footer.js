@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import footeLogo from "./../.././../assests/logo/logo.png";
 const Footer = () => {
   return (
-    <div className="mt-5 pt-5">
+    <div className="">
       <hr />
       <div className="row mr-0">
         <div className="col-lg-3">
