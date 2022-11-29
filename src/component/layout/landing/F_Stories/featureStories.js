@@ -16,7 +16,6 @@ const FeatureStories = () => {
         </h5>
       </div>
       <div className="pt-5">
-        {/* <Blog /> */}
       </div>
     </div>
   );
